@@ -1,4 +1,4 @@
-package net.akaame.myapplication;
+package com.mjm.rust;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final TextView tv_greet = (TextView) findViewById(R.id.greetingLabel);
+        final TextView tv_greet = findViewById(R.id.greetingLabel);
         tv_greet.setText(Session.greet("{Your Name Here}"));
 
-        final TextView tv_number = (TextView) findViewById(R.id.numberLabel);
+        final TextView tv_number = findViewById(R.id.numberLabel);
         final int res = MyApplication.get().getSession().add_and1(2);
         tv_number.setText(getString(R.string.rust_add1_text, res));
     }

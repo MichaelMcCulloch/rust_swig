@@ -4,7 +4,7 @@ static INCLUDE_SYS_H: [&str; 1] = ["jni.h"];
 
 static RUST_SRC_DIR: &str = "src";
 static ANDROID_BASE_DIR: &str = "app";
-static ANDROID_PACKAGE_ID: &str = "net.akaame.myapplication";
+static ANDROID_PACKAGE_ID: &str = "com.mjm.rust";
 
 // =========================================================
 // This script is portable; copy and paste it into your own

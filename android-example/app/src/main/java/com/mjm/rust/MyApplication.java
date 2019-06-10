@@ -1,4 +1,4 @@
-package net.akaame.myapplication;
+package com.mjm.rust;
 
 import android.app.Application;
 import android.util.Log;
@@ -8,13 +8,17 @@ import android.util.Log;
  */
 
 public final class MyApplication extends Application {
+    private static final String TAG = "exm MyApplication";
     private static MyApplication sSelf;
     private Session mSession;
-    private static final String TAG = "exm MyApplication";
 
     public MyApplication() {
         super();
         sSelf = this;
+    }
+
+    public static MyApplication get() {
+        return sSelf;
     }
 
     @Override
@@ -28,10 +32,6 @@ public final class MyApplication extends Application {
             return;
         }
         mSession = new Session();
-    }
-
-    public static MyApplication get() {
-        return sSelf;
     }
 
     public Session getSession() {

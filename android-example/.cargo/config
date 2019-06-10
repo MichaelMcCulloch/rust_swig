@@ -1,15 +1,20 @@
 [target.aarch64-linux-android]
-linker = "aarch64-linux-android-gcc"
+ar =     "/home/michael/Apps/AndroidStudio/ndk/arm64/bin/aarch64-linux-android-ar"
+linker = "/home/michael/Apps/AndroidStudio/ndk/arm64/bin/aarch64-linux-android-gcc"
 runner = "./run-on-adroid.sh"
 
 [target.arm-linux-androideabi]
 linker = "arm-linux-androideabi-gcc"
+ar =     "/home/michael/Apps/AndroidStudio/ndk/arm/bin/arm-linux-androideabi-ar"
+linker = "/home/michael/Apps/AndroidStudio/ndk/arm/bin/arm-linux-androideabi-gcc"
 runner = "./run-on-adroid.sh"
 
 [target.i686-linux-android]
-linker = "i686-linux-android-gcc"
+ar =     "/home/michael/Apps/AndroidStudio/ndk/x86/bin/i686-linux-android-ar"
+linker = "/home/michael/Apps/AndroidStudio/ndk/x86/bin/i686-linux-android-gcc"
 runner = "./run-on-adroid.sh"
 
 [target.x86_64-linux-android]
-linker = "x86_64-linux-android-gcc"
+ar =     "/home/michael/Apps/AndroidStudio/ndk/x86_64/bin/x86_64-linux-android-ar"
+linker = "/home/michael/Apps/AndroidStudio/ndk/x86_64/bin/x86_64-linux-android-gcc"
 runner = "./run-on-adroid.sh"
